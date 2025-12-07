@@ -1,0 +1,32 @@
+
+> vscode-llm-copilot@0.0.1 compile
+> webpack
+
+asset [1m[32mextension.js[39m[22m 2.73 MiB [1m[33m[compared for emit][39m[22m (name: extension)
+runtime modules 670 bytes 3 modules
+modules by path [1m./node_modules/[39m[22m 1.14 MiB 141 modules
+modules by path [1m./src/[39m[22m 19.1 KiB
+  modules by path [1m./src/llm/[39m[22m 10.2 KiB
+    [1m./src/llm/LLMService.ts[39m[22m 1.44 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/llm/providers/GeminiProvider.ts[39m[22m 1.97 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    + 3 modules
+  modules by path [1m./src/*.ts[39m[22m 8.94 KiB
+    [1m./src/extension.ts[39m[22m 4.48 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/ChatPanel.ts[39m[22m 4.46 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[31m[1 error][39m[22m
++ 14 modules
+
+[1m[31mERROR[39m[22m in [1mD:\Python Learnings\vscode-llm-copilot\src\ChatPanel.ts[39m[22m
+[1m./src/ChatPanel.ts[39m[22m [1m[32m12:8-15[39m[22m
+[1m[tsl] [1m[31mERROR[39m[22m[1m in D:\Python Learnings\vscode-llm-copilot\src\ChatPanel.ts(12,9)
+      TS6133: 'context' is declared but its value is never read.[39m[22m
+ts-loader-default_e3b0c44298fc1c14
+ @ ./src/extension.ts 15:20-42
+
+[1m[31mERROR[39m[22m in [1mD:\Python Learnings\vscode-llm-copilot\src\llm\providers\AnthropicProvider.ts[39m[22m
+[1m./src/llm/providers/AnthropicProvider.ts[39m[22m [1m[32m28:49-57[39m[22m
+[1m[tsl] [1m[31mERROR[39m[22m[1m in D:\Python Learnings\vscode-llm-copilot\src\llm\providers\AnthropicProvider.ts(28,50)
+      TS2339: Property 'messages' does not exist on type 'Anthropic'.[39m[22m
+ts-loader-default_e3b0c44298fc1c14
+ @ ./src/extension.ts 19:28-72
+
+webpack 5.103.0 compiled with [1m[31m2 errors[39m[22m in 3027 ms

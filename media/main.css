@@ -1,0 +1,44 @@
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px 0;
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+.message {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    max-width: 85%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message.bot {
+    background-color: var(--vscode-editor-inactiveSelectionBackground);
+    color: var(--vscode-editor-foreground);
+    align-self: flex-start;
+}
+
+#input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#send-btn {
+    width: 100%;
+}
