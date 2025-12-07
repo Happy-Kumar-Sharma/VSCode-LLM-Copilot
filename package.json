@@ -1,14 +1,13 @@
 {
     "name": "vscode-llm-copilot",
-    "displayName": "LLM Copilot",
+    "displayName": "VSCode LLM Copilot",
     "description": "Chat with multiple LLMs (Gemini, ChatGPT, Claude, Grok) in VS Code",
     "version": "0.0.1",
-    "publisher": "User",
+    "publisher": "HappyKumarSharma",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/vscode-llm-copilot"
+        "url": "https://github.com/Happy-Kumar-Sharma/VSCode-LLM-Copilot"
     },
-    "icon": "media/chat-icon.svg",
     "license": "MIT",
     "engines": {
         "vscode": "^1.96.0"
@@ -23,6 +22,22 @@
             {
                 "command": "vscode-llm-copilot.chat",
                 "title": "Open LLM Chat"
+            },
+            {
+                "command": "vscode-llm-copilot.setGeminiKey",
+                "title": "LLM Copilot: Set Gemini API Key"
+            },
+            {
+                "command": "vscode-llm-copilot.setOpenAIKey",
+                "title": "LLM Copilot: Set OpenAI API Key"
+            },
+            {
+                "command": "vscode-llm-copilot.setAnthropicKey",
+                "title": "LLM Copilot: Set Anthropic API Key"
+            },
+            {
+                "command": "vscode-llm-copilot.setGrokKey",
+                "title": "LLM Copilot: Set Grok API Key"
             }
         ],
         "viewsContainers": {
@@ -61,6 +76,7 @@
         }
     },
     "scripts": {
+        "build": "npm run compile",
         "vscode:prepublish": "npm run package",
         "compile": "webpack",
         "watch": "webpack --watch",

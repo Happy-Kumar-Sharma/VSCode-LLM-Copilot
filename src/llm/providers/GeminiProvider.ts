@@ -25,7 +25,8 @@ export class GeminiProvider implements ILLMProvider {
         }
 
         try {
-            const model = this.genAI.getGenerativeModel({ model: "gemini-pro" });
+            // Use gemini-1.5-flash as gemini-pro often returns 404 on the v1 API for free tier/some regions
+            const model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
             const result = await model.generateContent(prompt);
             const response = await result.response;
             return response.text();

@@ -19,6 +19,7 @@ Thank you for your interest in contributing! We welcome contributions from the c
 2.  **Install dependencies:**
     ```bash
     npm install
+    npm run build
     ```
 
 3.  **Open in VS Code:**
@@ -45,6 +46,14 @@ Thank you for your interest in contributing! We welcome contributions from the c
 
 4.  **Testing:**
     -   Run `npm test` to execute the test suite (currently basic activation test).
+    -   Run `vsce ls --tree` to see all included files.
+
+5.  **Publishing:**
+    -   Run `npm run compile` to compile the extension.
+    -   Run `npm install -g @vscode/vsce` to install the VS Code Extension CLI.
+    -   Run `vsce package` to package the extension.
+    -   Run `npx @vscode/vsce login HappyKumarSharma` to login to the VS Code Marketplace
+    -   Run `npx @vscode/vsce publish` to publish the extension to the VS Code Marketplace
 
 ## Project Structure
 
